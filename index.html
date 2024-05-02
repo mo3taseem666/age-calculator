@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="custom.css">
+  <link rel="stylesheet" href="custom.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="main w-screen h-screen flex flex-col justify-center items-center bg-slate-300">
+        <div class="theBg w-[700px] mb-5 mt-10 h-[525px] sm:w-[90%] md:scale-[82%] sm:rounded-br-[100px] bg-white rounded-br-[175px] rounded-3xl shadow-xl relative p-12 sm:p-8 sm:px-5 flex flex-col">
+            <form action="#" class="flex sm:justify-between gap-7 sm:gap-0">
+                <div class="flex flex-col w-[22%] sm:w-[31%]">
+                    <label class="dayLabel uppercase font-bold sm:font-semibold text-gray-600 text-sm font-font7 tracking-widest mb-2" for="day">day</label>
+                    <input class="dayInput text-2xl sm:text-lg font-bold text-black font-font7 p-3 outline outline-1 outline-gray-300 rounded-lg border-transparent border focus:outline-2 focus:outline-purple-700" type="number" required placeholder="DD">
+                    <p class="alert1 text-red-600 text-xs sm:text-[8px] mt-2 tracking-wide font-medium hidden">this field is required!</p>
+                    <p class="invalid1 text-red-600 text-xs sm:text-[8px] mt-2 tracking-wide font-medium hidden ">must be a valid day!</p>
+                </div>
+
+                <div class="flex flex-col w-[22%] sm:w-[31%]">
+                    <label class="monthLabel uppercase font-bold sm:font-semibold text-gray-600 text-sm font-font7 tracking-widest mb-2" for="month">month</label>
+                    <input class="monthInput text-2xl sm:text-lg font-bold text-black font-font7 p-3 outline outline-1 outline-gray-300 rounded-lg border-transparent border focus:outline-2 focus:outline-purple-700" type="number" required placeholder="MM">
+                    <p class="alert2 text-red-600 text-xs sm:text-[8px] mt-2 tracking-wide font-medium hidden">this field is required!</p>
+                    <p class="invalid2 text-red-600 text-xs sm:text-[8px] mt-2 tracking-wide font-medium hidden ">must be a valid month!</p>
+                </div>
+
+                <div class="flex flex-col w-[22%] sm:w-[31%]">
+                    <label class="yearLabel uppercase font-bold sm:font-semibold text-gray-600 text-sm font-font7 tracking-widest mb-2" for="year">year</label>
+                    <input class="yearInput text-2xl sm:text-lg font-bold text-black font-font7 p-3 outline outline-1 outline-gray-300 rounded-lg border-transparent border focus:outline-2 focus:outline-purple-700" type="number" required placeholder="YYYY">
+                    <p class="alert3 text-red-600 text-xs sm:text-[8px] mt-2 tracking-wide font-medium hidden">this field is required!</p>
+                    <p class="invalid3 text-red-600 text-xs sm:text-[8px] mt-2 tracking-wide font-medium hidden ">must be a valid year!</p>
+                </div>
+                <button form="#" class="subButton transition-all duration-700 size-20 rounded-full bg-black absolute right-12 top-36
+                sm:size-16 sm:after:content-'' sm:after:w-[190%] sm:after:h-[2px] sm:after:absolute sm:after:bg-gray-200
+                sm:after:left-16 sm:after:top-8 sm:right-[calc(50%-32px)] sm:top-[150px]
+                before:content-'' before:w-[500px] sm:before:right-16 sm:before:top-8 sm:before:w-[190%] before:h-[2px] before:absolute before:bg-gray-200 before:right-20 before:top-10
+                " type="submit"><i class="fa-solid fa-angles-down text-4xl font-light text-white"></i></button>
+            </form>
+
+            <div class="flex flex-col gap-5 mt-14 sm:mt-28">
+                <div class=" text-7xl flex  gap-3 sm:text-6xl font-bold font-font6">
+                    <span class="shownYear text-purple-600">--</span>
+                    <p> years</p>
+                </div>
+                <div class=" text-7xl flex  gap-3 sm:text-6xl font-bold font-font6">
+                    <span class="shownMonth text-purple-600">--</span>
+                    <p> months</p>
+                </div>
+                <div class=" text-7xl flex  gap-3 sm:text-6xl font-bold font-font6">
+                    <span class="shownDay text-purple-600">--</span>
+                    <p> days</p>
+                </div>
+            </div>
+
+        </div>
+        <p class="text-center px-3 mb-3 font-font6 text-purple-700 text-sm sm:text-xs">Hope you live for so long until you achieve more than you wish.</p>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
